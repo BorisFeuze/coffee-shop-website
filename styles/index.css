@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #2e2220;
+  color: aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* @media screen and (max-width: 600px) {
+  body {
+    background-color: rebeccapurple;
+  }
+} */
+
+@media (600px < width <1000px) {
+  body {
+    background-color: blue;
+  }
+}
+
+main,
+header,
+footer {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.1rem;
+}
+
+header {
+  margin-block: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.nav-list {
+  list-style: none;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  width: fit-content;
+}
+.nav-item {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav-item a {
+  text-decoration: none;
+}
+
+nav-item a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+p {
+  max-width: 80ch; /*ch = charater*/
+}
+
+figure {
+  width: 400px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 0;
+}

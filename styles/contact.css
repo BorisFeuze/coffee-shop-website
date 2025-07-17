@@ -1,0 +1,73 @@
+figure {
+  width: 200px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 0;
+}
+
+.contact {
+  margin: 3rem;
+  max-width: fit-content;
+}
+.contact-label {
+  display: inline-block;
+  width: 5rem;
+  height: 2rem;
+
+  @media screen and (width < 501px) {
+    height: 5px;
+  }
+}
+
+/* @media screen and (width < 501px) {
+  .contact-label {
+    height: 5px;
+  }
+} */
+
+.contact fieldset {
+  padding-top: 1rem;
+}
+
+.contact fieldset div {
+  text-align: right;
+}
+
+.contact-input {
+  width: 15rem;
+  padding: 0.25rem 0.75rem;
+  border: 3px solid black;
+  /* border-radius: 20px; */
+
+  @media screen and (width < 501px) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* @media screen and (width < 501px) {
+  .contact-input {
+    margin-bottom: 0.5rem;
+  }
+} */
+
+.contact-input:focus-visible {
+  outline-color: red;
+}
+
+.btn {
+  margin: 0.5rem 1rem;
+  padding: 0.25rem 0.75rem;
+  color: inherit;
+  font: initial;
+  background-color: #2e2220;
+  border: 2px outset;
+  cursor: pointer;
+}
+
+.btn:active {
+  border: 3px inset;
+}
